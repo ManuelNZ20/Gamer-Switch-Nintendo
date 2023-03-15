@@ -1,0 +1,312 @@
+:root {
+  --background-color: rgb(238, 216, 139);
+  --width-element: 305px;
+  --width-line-jsck: 9%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+}
+
+#switch-container {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(51, 56, 43);
+  margin: 10% auto;
+  border-radius: 2rem;
+  border: 0.05rem solid rgb(45, 41, 53);
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+#window-switch {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  width: 450px;
+  height: var(--width-element);
+  background-color: rgb(81, 81, 84);
+  overflow: hidden;
+  border: 0.05rem solid rgb(45, 41, 53);
+  overflow: hidden;
+}
+
+#window-switch #window-interno {
+  width: 430px;
+  height: calc(var(--width-element) - 18px);
+  background-color: rgb(64, 62, 65);
+  margin: 2% auto;
+  border-radius: 0.2em;
+  overflow: hidden;
+  border: 0.05rem solid rgb(45, 41, 53);
+}
+
+#window-switch #window-interno [id~="window-gamer"] {
+  width: 85%;
+  height: 85%;
+  background-color: rgb(201, 201, 205);
+  margin: 5% auto;
+  border-radius: 0.1rem;
+  border: 0.05rem solid rgb(45, 41, 53);
+  box-shadow: 0 0 5px 5px rgb(51, 56, 43);
+  overflow: hidden;
+}
+
+#window-switch #window-interno [id~="window-gamer"] #logo {
+  fill: rgb(67, 61, 64);
+  width: 100px;
+  height: 100px;
+  margin: 20% 35%;
+}
+
+#switch-container #joystick-left {
+  width: 75px;
+  height: var(--width-element);
+  position: relative;
+  display: inline-block;
+  background-color: rgb(93, 195, 224);
+  top: -3px;
+  left: -1.5px;
+  border-radius: 2rem 0 0 2rem;
+  border: 0.05rem solid rgb(45, 41, 53);
+}
+
+#switch-container #joystick-right {
+  width: 75px;
+  height: var(--width-element);
+  position: relative;
+  display: inline-block;
+  background-color: rgb(231, 115, 102);
+  top: -3px;
+  right: -1.5px;
+  border-radius: 0 2rem 2rem 0;
+  border: 0.05rem solid rgb(45, 41, 53);
+}
+
+/* Joystick left */
+#switch-container #joystick-left .button-min {
+  position: relative;
+  top: 5px;
+  left: 52px;
+}
+
+#switch-container .button-joystick {
+  margin: 20px auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(106, 107, 109);
+  border: 0.1rem solid rgb(45, 41, 53);
+}
+
+#switch-container .button-joystick .vertical {
+  width: var(--width-line-jsck);
+  height: 32px;
+  margin: auto;
+  background-color: rgb(45, 41, 53);
+}
+#switch-container .button-joystick .horizontal {
+  background-color: rgb(45, 41, 53);
+  width: 32px;
+  height: var(--width-line-jsck);
+  position: relative;
+  bottom: 2vh;
+}
+
+#switch-container .button-joystick .button {
+  width: 27px;
+  height: 27px;
+  background-color: rgb(106, 107, 109);
+  display: inline-block;
+  position: absolute;
+  top: 41.5px;
+  z-index: 9;
+  border-radius: 50%;
+  left: 23px;
+  border: 0.1rem solid rgb(45, 41, 53);
+}
+#switch-container #joystick-left .buttons-directions {
+  margin-top: 60%;
+  width: 100%;
+  height: 20%;
+  padding: 5%;
+  text-align: center;
+}
+
+#switch-container #joystick-left .buttons-directions i {
+  margin: auto;
+  color: rgb(106, 107, 109);
+  border: 0.1rem solid rgb(45, 41, 53);
+  border-radius: 50%;
+  background-color: rgb(45, 41, 53);
+}
+
+#switch-container #joystick-left .buttons-directions .column-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#switch-container #joystick-left .button-capture {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(106, 107, 109);
+  border: 0.1rem solid rgb(45, 41, 53);
+  margin: 50% 60% 0;
+}
+
+#switch-container #joystick-left .button-capture .button-capture-in {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  margin-top: 0.1vh;
+  background-color: rgb(45, 41, 53);
+  border-radius: 50%;
+}
+
+#switch-container #joystick-right .button-plus {
+  margin: 5% 10% 0;
+  width: 24.5%;
+  height: 6.5%;
+}
+
+#switch-container #joystick-right .button-plus .button-plus-y {
+  width: 15%;
+  height: 100%;
+  background-color: rgb(45, 41, 53);
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+#switch-container #joystick-right .button-plus .button-plus-x {
+  width: 100%;
+  height: 12%;
+  background-color: rgb(45, 41, 53);
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 60%;
+  border-radius: 0.5rem;
+}
+
+#switch-container #joystick-right .buttons-actions {
+  width: 100%;
+  margin-top: 30%;
+  padding: 5%;
+  height: 25%;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+
+#switch-container #joystick-right .buttons-actions div[class~="button-action"] {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgb(65, 60, 70);
+  color: rgb(138, 136, 136);
+  text-align: center;
+  padding: 0.3vh;
+  border: 0.1rem solid rgb(45, 41, 53);
+}
+
+#switch-container #joystick-right .buttons-actions .column-button-actions {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+#switch-container #joystick-right .button-right-joystick {
+  width: 60%;
+  height: 15%;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 2vh;
+  border: 0.1rem solid rgb(45, 41, 53);
+  background-color: rgb(106, 107, 109);
+}
+
+#switch-container #joystick-right .button-right-joystick .button-right-jsck-x {
+  width: 100%;
+  height: var(--width-line-jsck);
+  background-color: rgb(45, 41, 53);
+  position: relative;
+  top: 45%;
+}
+
+#switch-container #joystick-right .button-right-joystick .button-right-jsck-y {
+  height: 100%;
+  width: var(--width-line-jsck);
+  background-color: rgb(45, 41, 53);
+  margin: auto;
+  position: relative;
+  bottom: 10%;
+}
+
+#switch-container #joystick-right .button-jsck {
+  width: 45%;
+  height: 11.5%;
+  background-color: rgb(106, 107, 109);
+  position: absolute;
+  border-radius: 50%;
+  bottom: 42%;
+  left: 28%;
+  border: 0.1rem solid rgb(45, 41, 53);
+}
+#switch-container #joystick-right .button-home {
+  width: 35%;
+  height: 8%;
+  background-color: rgb(106, 107, 109);
+  margin: 5vh auto;
+  border-radius: 50%;
+  border:0.1rem solid rgb(45, 41, 53);
+}
+
+#switch-container #joystick-right .button-home .home-techo {
+  width: 0;
+  height: 0;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-top-color:transparent;
+  border-right-color:transparent;
+  border-left-color:transparent;
+  border-bottom-color:rgb(45, 41, 53);
+  margin: auto;
+}
+#switch-container #joystick-right .home-pared{
+  width:14.5px;
+  height: 8px;
+  margin: auto;
+  border:.1rem solid rgb(45, 41, 53);
+}
+/* Media Query */
+@media (max-width: 650px) {
+  #switch-container {
+    margin-top: 27vh;
+    transform: rotate(90deg);
+    transition: 3s;
+  }
+}
+
+@media (max-width: 465px) {
+  #switch-container {
+    position: relative;
+    right: 15%;
+    transition: 3s;
+  }
+}
+
+@media (max-width: 400px) {
+  #switch-container {
+    position: relative;
+    right: 33.5%;
+    transition: 1s;
+  }
+}
