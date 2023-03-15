@@ -1,0 +1,22 @@
+# este es un comentario dentro de mi archivo de .gitignore
+# hola mundo desde .gitignore
+
+# ejemplo del libro de git
+# ignora todos los archivos
+.a
+# pero no lib.a, aun cuando había ignorado los archivos terminados en .a en la línea anterior.
+!lib.a
+
+# ignora unicamente el archivo TODO de la raíz, no subir/TODO
+/TODO
+
+# ignora todos los archivos del directorio build/
+build/
+
+# ignora doc/notes.txt pero no este: doc/server/arch.txt
+doc/*.txt
+
+#ignora todos los archivos .txt del directorio doc/
+doc/**/*.txt
+
+
